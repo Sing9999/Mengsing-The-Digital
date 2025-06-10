@@ -1,4 +1,4 @@
-🧐 AI Chatbot พร้อมหน่วยความจำ (Memory) และเชื่อม Telegram + ภาษาไทยด้วย HuggingFace 🧠🇳🇭
+🧐 AI Chatbot พร้อมหน่วยความจำ (Memory) และเชื่อม Telegram + ภาษาไทยด้วย HuggingFace 🧠🇳🇽
 
 from telegram import Update, ForceReply from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, ContextTypes, filters from transformers import AutoTokenizer, AutoModelForCausalLM import json import os
 
@@ -28,7 +28,7 @@ def recall(self, user_id):
 
 --------------------------- AI ภาษาไทยด้วย Transformers ----------------------------
 
-model_name = "airesearch/wangchanberta-base-att-spm-uncased" tokenizer = AutoTokenizer.from_pretrained(model_name) model = AutoModelForCausalLM.from_pretrained(model_name)
+model_name = "flax-community/gpt2-thai" tokenizer = AutoTokenizer.from_pretrained(model_name) model = AutoModelForCausalLM.from_pretrained(model_name)
 
 HISTORY_FILE = "conversation_history.json"
 
