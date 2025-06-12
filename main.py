@@ -1,6 +1,9 @@
-# STEP 1: ติดตั้งไลบรารี
+# STEP 1: ดึงโปรเจกต์จาก GitHub 
+!git clone
+https://github.com/Sing9999/Mengsing-The-Digital.git
+# STEP 1: ติดตั้งไลบรารีที่จำเป็น
 !pip install python-telegram-bot==20.7 transformers pyngrok
-
+transformers
 # STEP 2: Import และตั้งค่าตัวแปร
 import os
 from pyngrok import ngrok
